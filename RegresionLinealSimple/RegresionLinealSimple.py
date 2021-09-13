@@ -24,4 +24,11 @@ regression.fit(xTrain,yTrain) #Acepta dos parametros, en primer lugar el conjunt
 yPred = regression.predict (xTest)
  
 
-#
+# Visualizar los resultados de entrenamiento
+plt.scatter(xTrain,yTrain,color="red")
+plt.plot(xTrain,regression.predict(xTrain,color="blue"))
+plt.title("Salary vs Experience Years")
+plt.xlabel("Experience years")
+plt.ylabel("Salary")
+plt.show()
+
